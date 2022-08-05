@@ -22,6 +22,7 @@ const { chromium } = require("@playwright/test");
     await page.goto(links[0]);
     await page.locator(".chart-view").screenshot({ path: `./screenshots/${links[0].split('/').reverse()[0].split('.')[0]}.png` });
 
+
     await page.goto(links[1]);
     await page.locator(".chart-view").screenshot({ path: `./screenshots/${links[1].split('/').reverse()[0].split('.')[0]}.png` });
 
@@ -30,6 +31,9 @@ const { chromium } = require("@playwright/test");
 
     await page.goto(links[3]);
     await page.locator(".chart-view").screenshot({ path: `./screenshots/${links[3].split('/').reverse()[0].split('.')[0]}.png` });
+
+
+
 
 
   // await page.pause();
